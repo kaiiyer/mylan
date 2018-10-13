@@ -3,11 +3,11 @@ from __future__ import unicode_literals
 from django.db import models
 from django.utils import timezone
 
-class Post(models.Model):
+class Medicine(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-    title = models.CharField(max_length=200)
-    text = models.TextField()
-    created_date = models.DateTimeField(
+    name = models.CharField(max_length=200)
+    issue = models.TextField()
+    purchased_date = models.DateTimeField(
             default=timezone.now)
     published_date = models.DateTimeField(
             blank=True, null=True)
