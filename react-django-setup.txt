@@ -13,7 +13,7 @@ Follow the steps below to setup Django:
 
     Have Python and pip installed on your computer.
     Install virtualenv and virtualenvwrapper by running pip install virtualenvwrapper.
-    source `which virtualenvwrapper.sh
+    source `which virtualenvwrapper.sh`
     Create a virtual environment for the project using mkvirtualenv name-of-virtual-env.
     Run workon name-of-virtual-env to activate the virtual environment.
     Install Django with pip install django.
